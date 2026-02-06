@@ -1,6 +1,7 @@
 #include "stm32f10x.h"
 #include "OLED_Font.h"
 #include "Delay.h"
+#include "Buzzer.h"
 
 #define OLED_SCL(x)		GPIO_WriteBit(GPIOB, GPIO_Pin_8, (BitAction)(x))
 #define OLED_SDA(x)		GPIO_WriteBit(GPIOB, GPIO_Pin_9, (BitAction)(x))
@@ -130,6 +131,7 @@ void OLED_Clear(){
 		}
 	}
 }
+
 
 void OLED_Init(){
 	

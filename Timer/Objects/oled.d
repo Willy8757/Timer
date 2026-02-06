@@ -30,3 +30,4 @@
 .\objects\oled.o: .\Library\misc.h
 .\objects\oled.o: Hardware\OLED_Font.h
 .\objects\oled.o: .\Software\Delay.h
+.\objects\oled.o: Hardware\Buzzer.h

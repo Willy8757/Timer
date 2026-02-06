@@ -779,7 +779,7 @@ I (.\Library\stm32f10x_usart.h)(0x696F0FA9)
 I (.\Library\stm32f10x_wwdg.h)(0x696F0FA9)
 I (.\Library\misc.h)(0x696F0FA9)
 F (.\Hardware\LED_driver.h)(0x69708C3C)()
-F (.\Hardware\Key.c)(0x698490CA)(--c99 --gnu -c --cpu Cortex-M3 -g -O0 --apcs=interwork --split_sections -I .\Start -I .\User -I .\Library -I .\Hardware -I .\Software-IC:\Users\willy\Keil\ARM\PACK\Keil\STM32F1xx_DFP\2.4.1\Device\Include-D__UVISION_VERSION="543" -DSTM32F10X_MD -DUSE_STDPERIPH_DRIVER-o .\objects\key.o --omf_browse .\objects\key.crf --depend .\objects\key.d)
+F (.\Hardware\Key.c)(0x69854EEB)(--c99 --gnu -c --cpu Cortex-M3 -g -O0 --apcs=interwork --split_sections -I .\Start -I .\User -I .\Library -I .\Hardware -I .\Software-IC:\Users\willy\Keil\ARM\PACK\Keil\STM32F1xx_DFP\2.4.1\Device\Include-D__UVISION_VERSION="543" -DSTM32F10X_MD -DUSE_STDPERIPH_DRIVER-o .\objects\key.o --omf_browse .\objects\key.crf --depend .\objects\key.d)
 I (.\Start\stm32f10x.h)(0x4D783CB4)
 I (.\Start\core_cm3.h)(0x4D523B58)
 I (C:\Users\willy\Keil\ARM\ARMCC\include\stdint.h)(0x5E8E3CC2)
@@ -809,10 +809,10 @@ I (.\Library\stm32f10x_usart.h)(0x696F0FA9)
 I (.\Library\stm32f10x_wwdg.h)(0x696F0FA9)
 I (.\Library\misc.h)(0x696F0FA9)
 I (.\Software\Delay.h)(0x6972C7C1)
-I (Hardware\OLED.h)(0x6983251B)
+I (Hardware\OLED.h)(0x698544E6)
 I (Hardware\Buzzer.h)(0x6970B504)
 F (.\Hardware\Key.h)(0x69848BF6)()
-F (.\Hardware\OLED.c)(0x69832891)(--c99 --gnu -c --cpu Cortex-M3 -g -O0 --apcs=interwork --split_sections -I .\Start -I .\User -I .\Library -I .\Hardware -I .\Software-IC:\Users\willy\Keil\ARM\PACK\Keil\STM32F1xx_DFP\2.4.1\Device\Include-D__UVISION_VERSION="543" -DSTM32F10X_MD -DUSE_STDPERIPH_DRIVER-o .\objects\oled.o --omf_browse .\objects\oled.crf --depend .\objects\oled.d)
+F (.\Hardware\OLED.c)(0x698544E6)(--c99 --gnu -c --cpu Cortex-M3 -g -O0 --apcs=interwork --split_sections -I .\Start -I .\User -I .\Library -I .\Hardware -I .\Software-IC:\Users\willy\Keil\ARM\PACK\Keil\STM32F1xx_DFP\2.4.1\Device\Include-D__UVISION_VERSION="543" -DSTM32F10X_MD -DUSE_STDPERIPH_DRIVER-o .\objects\oled.o --omf_browse .\objects\oled.crf --depend .\objects\oled.d)
 I (.\Start\stm32f10x.h)(0x4D783CB4)
 I (.\Start\core_cm3.h)(0x4D523B58)
 I (C:\Users\willy\Keil\ARM\ARMCC\include\stdint.h)(0x5E8E3CC2)
@@ -843,7 +843,8 @@ I (.\Library\stm32f10x_wwdg.h)(0x696F0FA9)
 I (.\Library\misc.h)(0x696F0FA9)
 I (Hardware\OLED_Font.h)(0x6972DD72)
 I (.\Software\Delay.h)(0x6972C7C1)
-F (.\Hardware\OLED.h)(0x6983251B)()
+I (Hardware\Buzzer.h)(0x6970B504)
+F (.\Hardware\OLED.h)(0x698544E6)()
 F (.\Hardware\OLED_Font.h)(0x6972DD72)()
 F (.\Hardware\Buzzer.c)(0x69848FB6)(--c99 --gnu -c --cpu Cortex-M3 -g -O0 --apcs=interwork --split_sections -I .\Start -I .\User -I .\Library -I .\Hardware -I .\Software-IC:\Users\willy\Keil\ARM\PACK\Keil\STM32F1xx_DFP\2.4.1\Device\Include-D__UVISION_VERSION="543" -DSTM32F10X_MD -DUSE_STDPERIPH_DRIVER-o .\objects\buzzer.o --omf_browse .\objects\buzzer.crf --depend .\objects\buzzer.d)
 I (.\Start\stm32f10x.h)(0x4D783CB4)
@@ -935,7 +936,7 @@ I (.\Library\stm32f10x_usart.h)(0x696F0FA9)
 I (.\Library\stm32f10x_wwdg.h)(0x696F0FA9)
 I (.\Library\misc.h)(0x696F0FA9)
 I (.\Software\Delay.h)(0x6972C7C1)
-I (.\Hardware\OLED.h)(0x6983251B)
+I (.\Hardware\OLED.h)(0x698544E6)
 I (.\Hardware\Key.h)(0x69848BF6)
 I (.\Hardware\Buzzer.h)(0x6970B504)
 F (.\User\stm32f10x_conf.h)(0x696F0FA9)()
