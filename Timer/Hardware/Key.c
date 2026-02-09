@@ -70,6 +70,7 @@ void TIM2_IRQHandler(void){
 			
 			if(GPIO_ReadOutputDataBit(GPIOB, GPIO_Pin_12)) {
                 counting = 0;
+				Set_Cnt(0);
             }
 		}
 		cnt--;

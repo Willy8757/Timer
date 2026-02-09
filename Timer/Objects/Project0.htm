@@ -3,7 +3,7 @@
 <title>Static Call Graph - [.\Objects\Project0.axf]</title></head>
 <body><HR>
 <H1>Static Call Graph for image .\Objects\Project0.axf</H1><HR>
-<BR><P>#&#060CALLGRAPH&#062# ARM Linker, 5060960: Last Updated: Mon Feb 09 08:38:08 2026
+<BR><P>#&#060CALLGRAPH&#062# ARM Linker, 5060960: Last Updated: Mon Feb 09 08:56:45 2026
 <BR><P>
 <H3>Maximum Stack Usage =        104 bytes + Unknown(Functions without stacksize, Cycles, Untraceable Function Pointers)</H3><H3>
 Call chain for Maximum Stack Depth:</H3>
@@ -422,7 +422,7 @@ Global Symbols
 <P><STRONG><a name="[a]"></a>DebugMon_Handler</STRONG> (Thumb, 2 bytes, Stack size 0 bytes, stm32f10x_it.o(i.DebugMon_Handler))
 <BR>[Address Reference Count : 1]<UL><LI> startup_stm32f10x_md.o(RESET)
 </UL>
-<P><STRONG><a name="[73]"></a>Delay</STRONG> (Thumb, 54 bytes, Stack size 0 bytes, delay.o(i.Delay))
+<P><STRONG><a name="[74]"></a>Delay</STRONG> (Thumb, 54 bytes, Stack size 0 bytes, delay.o(i.Delay))
 <BR><BR>[Called By]<UL><LI><a href="#[44]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;main
 </UL>
 
@@ -466,7 +466,7 @@ Global Symbols
 <LI><a href="#[57]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Key_init
 </UL>
 
-<P><STRONG><a name="[72]"></a>GPIO_ReadInputDataBit</STRONG> (Thumb, 18 bytes, Stack size 0 bytes, stm32f10x_gpio.o(i.GPIO_ReadInputDataBit))
+<P><STRONG><a name="[73]"></a>GPIO_ReadInputDataBit</STRONG> (Thumb, 18 bytes, Stack size 0 bytes, stm32f10x_gpio.o(i.GPIO_ReadInputDataBit))
 <BR><BR>[Called By]<UL><LI><a href="#[44]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;main
 </UL>
 
@@ -658,8 +658,9 @@ Global Symbols
 <P><STRONG><a name="[9]"></a>SVC_Handler</STRONG> (Thumb, 2 bytes, Stack size 0 bytes, stm32f10x_it.o(i.SVC_Handler))
 <BR>[Address Reference Count : 1]<UL><LI> startup_stm32f10x_md.o(RESET)
 </UL>
-<P><STRONG><a name="[74]"></a>Set_Cnt</STRONG> (Thumb, 6 bytes, Stack size 0 bytes, key.o(i.Set_Cnt))
+<P><STRONG><a name="[71]"></a>Set_Cnt</STRONG> (Thumb, 6 bytes, Stack size 0 bytes, key.o(i.Set_Cnt))
 <BR><BR>[Called By]<UL><LI><a href="#[44]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;main
+<LI><a href="#[29]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;TIM2_IRQHandler
 </UL>
 
 <P><STRONG><a name="[c]"></a>SysTick_Handler</STRONG> (Thumb, 2 bytes, Stack size 0 bytes, stm32f10x_it.o(i.SysTick_Handler))
@@ -672,18 +673,19 @@ Global Symbols
 </UL>
 <BR>[Address Reference Count : 1]<UL><LI> startup_stm32f10x_md.o(.text)
 </UL>
-<P><STRONG><a name="[29]"></a>TIM2_IRQHandler</STRONG> (Thumb, 106 bytes, Stack size 8 bytes, key.o(i.TIM2_IRQHandler))
+<P><STRONG><a name="[29]"></a>TIM2_IRQHandler</STRONG> (Thumb, 110 bytes, Stack size 8 bytes, key.o(i.TIM2_IRQHandler))
 <BR><BR>[Stack]<UL><LI>Max Depth = 104<LI>Call Chain = TIM2_IRQHandler &rArr; OLED_ShowNum &rArr; OLED_ShowChar &rArr; OLED_SetCursor &rArr; OLED_WriteCommand &rArr; OLED_SendBytes
 </UL>
 <BR>[Calls]<UL><LI><a href="#[52]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GPIO_ReadOutputDataBit
 <LI><a href="#[6c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OLED_ShowNum
 <LI><a href="#[51]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Buzzer_turn
+<LI><a href="#[71]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Set_Cnt
 <LI><a href="#[70]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;TIM_GetITStatus
-<LI><a href="#[71]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;TIM_ClearITPendingBit
+<LI><a href="#[72]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;TIM_ClearITPendingBit
 </UL>
 <BR>[Address Reference Count : 1]<UL><LI> startup_stm32f10x_md.o(RESET)
 </UL>
-<P><STRONG><a name="[71]"></a>TIM_ClearITPendingBit</STRONG> (Thumb, 6 bytes, Stack size 0 bytes, stm32f10x_tim.o(i.TIM_ClearITPendingBit))
+<P><STRONG><a name="[72]"></a>TIM_ClearITPendingBit</STRONG> (Thumb, 6 bytes, Stack size 0 bytes, stm32f10x_tim.o(i.TIM_ClearITPendingBit))
 <BR><BR>[Called By]<UL><LI><a href="#[29]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;TIM2_IRQHandler
 </UL>
 
@@ -715,13 +717,13 @@ Global Symbols
 <P><STRONG><a name="[44]"></a>main</STRONG> (Thumb, 94 bytes, Stack size 0 bytes, main.o(i.main))
 <BR><BR>[Stack]<UL><LI>Max Depth = 96<LI>Call Chain = main &rArr; OLED_ShowNum &rArr; OLED_ShowChar &rArr; OLED_SetCursor &rArr; OLED_WriteCommand &rArr; OLED_SendBytes
 </UL>
-<BR>[Calls]<UL><LI><a href="#[72]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GPIO_ReadInputDataBit
+<BR>[Calls]<UL><LI><a href="#[73]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GPIO_ReadInputDataBit
 <LI><a href="#[4d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Buzzer_init
 <LI><a href="#[67]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OLED_Init
 <LI><a href="#[60]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OLED_Clear
 <LI><a href="#[6c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OLED_ShowNum
-<LI><a href="#[73]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Delay
-<LI><a href="#[74]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Set_Cnt
+<LI><a href="#[74]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Delay
+<LI><a href="#[71]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Set_Cnt
 <LI><a href="#[57]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Key_init
 </UL>
 <BR>[Called By]<UL><LI><a href="#[43]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__rt_entry_main
